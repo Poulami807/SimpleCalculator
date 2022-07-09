@@ -7,7 +7,7 @@ btn.forEach((ele) => {
         field.innerText = "";
     } 
     else if (ele.id == "eq") {
-        field.innerText = "";
+        result()
     }
     else {
       display(val);
@@ -20,6 +20,6 @@ function display(v) {
 }
 function result() {
   var res = math.evaluate(field.innerText);
-  console.log(res);
+  field.innerText = "";
   display(res);
 }
