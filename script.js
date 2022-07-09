@@ -3,8 +3,12 @@ var btn = document.querySelectorAll(".ele");
 btn.forEach((ele) => {
   var val = ele.innerText;
   ele.addEventListener("click", () => {
-    if (ele.id == "cls") field.innerText = "";
-    else if (ele.id == "eq") result();
+    if (ele.id == "cls"){
+        field.innerText = "";
+    } 
+    else if (ele.id == "eq") {
+        field.innerText = "";
+    }
     else {
       display(val);
     }
